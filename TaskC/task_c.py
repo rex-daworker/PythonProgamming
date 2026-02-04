@@ -16,6 +16,7 @@ A program that prints reservation information according to task requirements.
 """
 
 from datetime import datetime
+from typing import List
 
 # Column headers (used only in Part A printing)
 HEADERS = [
@@ -98,7 +99,7 @@ def fetch_reservations(reservation_file: str) -> list:
 
 # ---------------------- PART B FUNCTIONS ---------------------- #
 
-def confirmed_reservations(reservations: list[list]) -> None:
+def confirmed_reservations(reservations: List[List]) -> None:
     """
     Prints all confirmed reservations in required format.
     """
@@ -111,7 +112,7 @@ def confirmed_reservations(reservations: list[list]) -> None:
     print()
 
 
-def long_reservations(reservations: list[list]) -> None:
+def long_reservations(reservations: List[List]) -> None:
     """
     Prints reservations with duration >= 3 hours.
     """
@@ -124,7 +125,7 @@ def long_reservations(reservations: list[list]) -> None:
     print()
 
 
-def confirmation_statuses(reservations: list[list]) -> None:
+def confirmation_statuses(reservations: List[List]) -> None:
     """
     Prints each reservation's confirmation status.
     """
@@ -135,7 +136,7 @@ def confirmation_statuses(reservations: list[list]) -> None:
     print()
 
 
-def confirmation_summary(reservations: list[list]) -> None:
+def confirmation_summary(reservations: List[List]) -> None:
     """
     Prints summary of confirmed vs not confirmed reservations.
     """
@@ -148,7 +149,7 @@ def confirmation_summary(reservations: list[list]) -> None:
     print()
 
 
-def total_revenue(reservations: list[list]) -> None:
+def total_revenue(reservations: List[List]) -> None:
     """
     Calculates and prints total revenue from confirmed reservations.
     """
